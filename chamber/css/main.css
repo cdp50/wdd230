@@ -1,0 +1,47 @@
+body {
+    background-color: rgb(245, 240, 187);
+}
+
+.logo, .date{
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+}
+main {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.box {
+    border: 3px solid #ffff;
+    width: 70%;
+    height: 200px;
+    margin: auto;
+    margin-bottom: 12px;
+    background-color: rgb(157, 207, 157);
+}
+
+.spotlight-parent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    border: 3px solid #ffff;
+    width: 70%;
+    height: 400px;
+    margin: auto;
+    margin-bottom: 12px;
+    background-color: rgb(157, 207, 157);
+}
+.spotlight-child {
+    border: 3px solid #ffff;
+    width: 80%;
+    height: 150px;
+    margin: auto;
+}
+
+/* I should use div for all my boxes. take it ou
+of your header. */
