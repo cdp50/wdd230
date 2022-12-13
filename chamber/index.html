@@ -6,61 +6,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Chamber IF</title>
     <meta name="description" content="The unofficial website of the Chamber of Commerce of Idaho Falls.">
-    <script defer src="js/main.js"></script>
+    <!-- <script defer src="js/main.js"></script> -->
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
 
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="../lesson3/images/png/logophone.png" alt="Logo">
-        </div>
-        <div>
-            <span>
-                <div class="date"></div>
-            </span>
-            <span>
-                <p>hamburger</p>
-            </span>
+        <div class="container">
+            <div class="subcontainer">
+                <nav id="navbar">
+                    <img src="images/logophone.png" alt="Logo" class="logo">
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                    <ul class="nav-menu">
+                        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Discover</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Directory</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Join</a></li>
+                    </ul>
+
+                    <div class="date"></div>
+                </nav>
+            </div>
         </div>
     </header>
-
-    <main >
-        <div class="box">
-            <p>Hero with site name call to action</p>
+    <main>
+        <div class="category-item hero">
+            Hero
         </div>
-        <div class="box">
-            <p>Event</p>
+        <div class="category-item event">
+            Event
         </div>
-        <div class="box">
-            <p>Weather</p>
+        <div class="category-item Weather">
+            Weather
         </div>
-        <div class="box">
-            <p>News release</p>
+        <div class="category-item news">
+            News
         </div>
-
-        <div class="spotlight-parent">
-
-            <div class="spotlight-child">
-                <p>Spotlight 1</p>
+        <div class="category-item Spotlight-parent">
+            <div class="Spotlight-child">
+                Spotlight1
             </div>
-            <div class="spotlight-child">
-                <p>Spotlight 2</p>
+            <div class="Spotlight-child">
+                Spotlight2
+            </div>
+            <div class="Spotlight-child Spotlight-child-3 ">
+                Spotlight3
             </div>
         </div>
-
+        <div class="category-item join">
+            Join
+        </div>
     </main>
-
     <footer>
-        
+        <div class="upFooter">
+            <div class="upF1">
+                <img src="images/logofooter.png" alt="logo footer" >
+            </div>
+            <div class="upF2">
+                <h3>Chamber of Commerce Idaho Falls</h3>
+                <p> 365 River Parkway
+                    Idaho Falls, ID 83402</p>
+            </div>
+            <div class="upF3">
+                <p> info@chamberif.org</p>
+                <p>Phone: (208) 523-1010</p>
+                <a href="https://goo.gl/maps/hkLrPNqhHU4aFpG17">Location Map</a>
+            </div> 
+        </div>  
+        <div class="line"></div>
+        <div class="downFooter">
+            <p class="downFooterItem">&copy; <span class="currentYear"></span> Chamber of Commerce Idaho Falls</p>
+            <p class="downFooterItem">|</p>
+            <p class="downFooterItem">Claudio Parra</p>
+            <p class="downFooterItem">|</p>
+            <p class="downFooterItem">WDD 230 Project</p>
+            <p class="downFooterItem">|</p>
+            <p class="downFooterItem" class="lastM">Last Updated: <span class="lastModified"></span></p>
+        </div>
     </footer>
-
-    
-    
-    
-
-
-
-    
+    <script src="js/main.js"></script>
 </body>
 </html>

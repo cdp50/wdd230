@@ -1,47 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+head, body, footer{
+    font-family: 'Noto Serif', serif;
+} 
 body {
     background-color: rgb(245, 240, 187);
 }
-
-.logo, .date{
+.date{
     display: flex;
     justify-content: center;
-    padding-top: 2%;
+    padding: 1rem;
+    font-size: 1.3rem;
 }
-main {
-    margin-top: 16px;
+/* hamburger */
+/* #hamburger-menu {    
+    background-color: transparent;
+    font-size:1.8em;
+    border:none;
+}
+
+#hamburger-menu #sidebar-menu {
+    visibilty: hidden;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 200px;
+    height: 100%;
+    background-color: #3D0E61;
+    padding: 0px 10px;
+    box-sizing: border-box;
+} */
+
+/* hamburger6 */
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+}
+li{
+    list-style: none;
+}
+a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+    height: 100%;
+    width: auto;  
+    padding: 1rem;
+}
+a:hover{
+    background-color:rgb(114,147,66);
+    color: white;
+    border: 3px solid white;
+
+}
+/* .nav-item{
+    height: 100%;
+    width: auto;
+} */
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+    background-color: black;    
+}
+.navbar{
+    width: 100%;
+    min-height: 70px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding: 1rem;
 }
-.box {
-    border: 3px solid #ffff;
-    width: 70%;
+.hamburger{
+    display: block !important;
+    margin-left: 93%;
+}
+.hamburger.active .bar :nth-child(2){
+    opacity: 0;
+}
+.hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(45deg);
+}
+
+.nav-menu{
+    display: none;
+    gap: 3rem;
+    flex-direction: column;
+    background-color: rgb(245, 240, 187);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    padding-left: 0;
+    padding-top: 3%;
+    padding-bottom: 2%;
+}
+.nav-menu.active{
+    display: flex;
+}
+
+ 
+
+
+
+
+
+
+
+/* main */
+main{
+    display: grid;
+    /* gap: 1rem; */
+    /* border: 2px solid black; */
+    height: 100%;
+    margin: 0 auto;
+}
+.category-item{
+    border: 1px solid gray;
     height: 200px;
-    margin: auto;
-    margin-bottom: 12px;
-    background-color: rgb(157, 207, 157);
+    background-color: beige;
+    margin: 10px;
 }
-
-.spotlight-parent{
+.Spotlight-parent{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-
-    border: 3px solid #ffff;
-    width: 70%;
+    justify-content: center;
     height: 400px;
-    margin: auto;
-    margin-bottom: 12px;
-    background-color: rgb(157, 207, 157);
 }
-.spotlight-child {
-    border: 3px solid #ffff;
-    width: 80%;
-    height: 150px;
-    margin: auto;
+.Spotlight-child{
+    border: 1px solid gray;
+    height: 180px;
+    min-width: 95%;
+    margin:0 auto;
+}
+.join{
+    display:none;
+}
+.Spotlight-child-3{
+    display: none;
 }
 
-/* I should use div for all my boxes. take it ou
-of your header. */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+footer{
+    /* margin-bottom: 3%; */
+    margin-left: 1%;
+    margin-right: 1%;
+}
+.upFooter{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap:5%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+.upF1 .upF2 .upF3{
+    flex-grow: 1;
+    min-width: 33.33%;
+    /* box-sizing: border-box; */
+    /* height: 250px; */
+    min-width: 50%;
+}
+.line{
+    height: 1px;
+    background: grey;
+    width:90%;
+    margin: 3% auto;
+}
+.downFooter{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:5%;
+}
+.downFooterItem{
+    margin-bottom: 3%;
+}
+
+/* MEDIUM SCREEN */
+@media (min-width:45em){
+
+    .hero{grid-area: hero;}
+    .news{grid-area: news;}
+    .Spotlight-parent{grid-area: spotlight-parent}
+    .join{grid-area: join;}
+    .event{grid-area: event;}
+    .weather{grid-area: weather;}
+    
+    main{
+        display: grid;
+        /* gap: 1rem; */
+        /* border: 2px solid black; */
+        grid-template-areas:
+            "hero hero hero"
+            "news news news"
+            "spotlight-parent spotlight-parent spotlight-parent"
+            "join join join"
+            "event event weather";
+        height: 100%;
+        margin: 0 auto;
+    }
+    /* the keyword unset works kind of like an opposite of 
+    display:none; it is working so far. */
+    .join{
+        display: unset;
+    }
+    .hamburger.active .bar :nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(45deg);
+    }
+
+    /* nav menu that appears */
+    /* .hamburger{
+        display: block;
+        margin-left: 93%;
+    } */
+    .nav-menu{
+        display: none;
+        /* left: 0;
+        top:70%; */
+        gap: 2rem;
+        flex-direction: column;
+        background-color: rgb(245, 240, 187);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        padding-left: 0;
+        padding-top: 3%;
+    }
+    nav-item{
+        margin: 16px;
+    }
+    .nav-menu.active{
+        display: flex;
+    }
+
+}
+
+/* LARGE SCREEN */
+/* if screen goes bigger than __ then show 
+what's inside the brackets */
+@media (min-width: 75em){
+    main{
+        display: grid;
+        /* gap: 1rem; */
+        /* border: 2px solid black; */
+        grid-template-areas:
+            "event hero hero spotlight-parent"
+            "weather hero hero spotlight-parent"
+            "join news news spotlight-parent";
+        height: 100%;
+        margin: 0 auto;
+    }
+    .hero{
+        height: 420px;
+    }
+    .Spotlight-child-3{
+        display: unset;
+    }
+    .Spotlight-parent{
+        height: 640px;
+    }
+    .Spotlight-child{
+        height: 202px;
+    }
+    .container{
+        margin: auto;
+        width: 100%;
+    }
+    .subcontainer{
+        width: 85%;
+        margin: 0 auto;
+    }
+    .nav-menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+        margin: 1rem;
+        height: 4rem;
+        padding: 0px;
+        padding-left: 1%;
+        padding-right: 2%;
+        left: 0;
+        position: relative;
+        background-color: rgb(245, 240, 187);
+    }
+    .hamburger{
+        display: none !important;
+    }
+   
+}
+/* el media query de large esta en la linea37 */
