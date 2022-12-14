@@ -32,3 +32,11 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 }))
+
+// Monday tuesday banner display
+const parent = document.querySelector('.mtBanner');
+
+if (now.getDay() == 1 || now.getDay() == 2) {
+    document.querySelector('.mtBanner'). 
+    style.display = 'block';
+}

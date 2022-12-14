@@ -17,10 +17,16 @@
             <div class="subcontainer">
                 <nav id="navbar">
                     <img src="images/logophone.png" alt="Logo" class="logo">
+                    <div class="menu_social">
+                    <div class="social">
+                        <a class="face" href="https://www.facebook.com/idahofallschamber/"><img src="images/facebook_icon.png" alt="facebook_icon"></a>
+                        <a class="insta" href="https://www.instagram.com/idahofallschamber/"><img src="images/instagram_icon.png" alt="instagram_icon"></a> 
+                    </div>
                     <div class="hamburger">
                         <span class="bar"></span>
                         <span class="bar"></span>
                         <span class="bar"></span>
+                    </div>
                     </div>
                     <ul class="nav-menu">
                         <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
@@ -33,23 +39,51 @@
                 </nav>
             </div>
         </div>
+        <div class="mtBanner">
+            <p> 🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m </p>
+        </div>
     </header>
     <main>
         <div class="category-item hero">
-            Hero
+            <picture>
+                <source media="(min_width: 200px)" srcset="images/welcome200.jpg">
+                <source media="(min_width: 400px)" srcset="images/welcome400.jpg">
+                <source media="(min_width: 600px)" srcset="images/welcome600.jpg">
+                <source media="(min_width: 800px)" srcset="images/welcome800.jpg">
+                <source media="(min_width: 1000px)" srcset="images/welcome1000.jpg">
+                <source media="(min_width: 1500px)" srcset="images/welcome1500.jpg">
+                <source media="(min_width: 2000px)" srcset="images/welcome2000.jpg">
+                <img src="images/welcome2000.jpg" alt=" Welcome to Idaho Falls">
+            </picture>
         </div>
         <div class="category-item event">
-            Event
+            <picture>
+                <source media="(min_width: 300px)" srcset="images/merryChristmas300.png">
+                <source media="(min_width: 600px)" srcset="images/merryChristmas600.png">
+                <source media="(min_width: 800px)" srcset="images/merryChristmas800.png">
+                <img src="images/merryChristmas800.png" alt=" Merry Christmas">
+            </picture>
         </div>
-        <div class="category-item Weather">
-            Weather
+        <div class="category-item weather">
+            <picture>
+                <source media="(min_width: 700px)" srcset="images/weather700.png">
+                <source media="(min_width: 800px)" srcset="images/weather1400.png">
+                <img src="images/weather1400.png" alt=" Merry Christmas">
+            </picture>
         </div>
         <div class="category-item news">
-            News
+            
+            <h1 ><a class="simple-link" href="https://www.eastidahonews.com/2022/12/idaho-state-police-to-distribute-over-400-meals-to-those-in-need-this-week/">Idaho State Police to distribute over 400 meals to those in need this week</a></h1>
+            <p>AMMON — After months of planning and weeks of hard work raising money, Idaho State Police will deliver hundreds of meals this week to those in need. It’s all thanks to local businesses, schools and the community.</p>
         </div>
         <div class="category-item Spotlight-parent">
             <div class="Spotlight-child">
-                Spotlight1
+                <picture>
+                    <source media="(min_width: 200px)" srcset="images/cleaningS194.png">
+                    <source media="(min_width: 700px)" srcset="images/cleaningM805.png">
+                    <source media="(min_width: 800px)" srcset="images/cleaningL280.png">
+                    <img src="images/cleaningL280.png" alt=" cleaning">
+                </picture>
             </div>
             <div class="Spotlight-child">
                 Spotlight2
@@ -86,7 +120,7 @@
             <p class="downFooterItem">|</p>
             <p class="downFooterItem">WDD 230 Project</p>
             <p class="downFooterItem">|</p>
-            <p class="downFooterItem" class="lastM">Last Updated: <span class="lastModified"></span></p>
+            <p class="downFooterItem lastM">Last Updated: <span class="lastModified"></span></p>
         </div>
     </footer>
     <script src="js/main.js"></script>

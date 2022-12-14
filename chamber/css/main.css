@@ -17,6 +17,10 @@ body {
     padding: 1rem;
     font-size: 1.3rem;
 }
+.mtBanner{
+    text-align: center;
+    display:none;
+}
 /* hamburger */
 /* #hamburger-menu {    
     background-color: transparent;
@@ -54,12 +58,27 @@ a{
     width: auto;  
     padding: 1rem;
 }
-a:hover{
+.nav-link:hover{
     background-color:rgb(114,147,66);
     color: white;
     border: 3px solid white;
-
 }
+.simple-link:hover{
+    color: gray;
+}
+.face img:hover{
+    background-color: white;
+}
+.insta img:hover{
+    background-color: white;
+}
+/* .social:hover{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1%;
+    max-width: 2%;
+    background-color: white;
+} */
 /* .nav-item{
     height: 100%;
     width: auto;
@@ -68,6 +87,7 @@ a:hover{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 1%;
 }
 .bar{
     display: block;
@@ -114,6 +134,30 @@ a:hover{
 .nav-menu.active{
     display: flex;
 }
+/* .social{
+    margin-top: 3%;
+} */
+.social{
+    margin: 3% 7%;
+}
+.hamburger{
+    margin: 0 82%;
+}
+.social img{
+    width: 30px;
+}
+.news{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    font-size: 60%;
+}
+.news h1{
+    width: 80%;
+}
+.news p{
+    width: 80%;
+}
 
  
 
@@ -128,8 +172,11 @@ main{
     display: grid;
     /* gap: 1rem; */
     /* border: 2px solid black; */
-    height: 100%;
+    /* height: 100%; */
+    /* min-height: 10rem; */
     margin: 0 auto;
+    width: 100%;
+    max-width: 85%;
 }
 .category-item{
     border: 1px solid gray;
@@ -154,6 +201,52 @@ main{
 }
 .Spotlight-child-3{
     display: none;
+}
+
+/* boxes img */
+.hero{
+    position: relative;
+}
+.hero img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 200px;
+    /* max-height: 420px; 
+    min-height: 420px; */
+}
+.event{
+    position: relative;
+}
+.event img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 200px;
+}
+.weather{
+    position: relative;
+}
+.weather img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 200px;
+}
+.Spotlight-child:first-child{
+    position: relative;
+}
+.Spotlight-child:first-child img{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 200px;
+    /* max-height: 420px; 
+    min-height: 420px; */
 }
 
 
@@ -213,8 +306,21 @@ footer{
     margin-bottom: 3%;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* MEDIUM SCREEN */
-@media (min-width:45em){
+@media (min-width:40em){
 
     .hero{grid-area: hero;}
     .news{grid-area: news;}
@@ -275,6 +381,36 @@ footer{
     .nav-menu.active{
         display: flex;
     }
+    .hero{
+        height: 420px;
+    }
+    .hero img {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: auto;
+        max-height: 420px; 
+        min-height: 420px;
+    }
+    .social{
+        margin: 0 7%;
+    }
+    .hamburger{
+        margin: 0 88%;
+    }
+    .news{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+        font-size: 85%;
+    }
+    .news h1{
+        width: 90%;
+    }
+    .news p{
+        width: 80%;
+    }
 
 }
 
@@ -291,6 +427,7 @@ what's inside the brackets */
             "weather hero hero spotlight-parent"
             "join news news spotlight-parent";
         height: 100%;
+        width: 75%;
         margin: 0 auto;
     }
     .hero{
@@ -319,8 +456,9 @@ what's inside the brackets */
         justify-content: space-between;
         align-items: center;
         gap: 2rem;
-        margin: 1rem;
+        margin: 0 auto;
         height: 4rem;
+        width: 75%;
         padding: 0px;
         padding-left: 1%;
         padding-right: 2%;
@@ -331,6 +469,36 @@ what's inside the brackets */
     .hamburger{
         display: none !important;
     }
-   
+    .hero{
+        position: relative;
+    }
+    .hero img {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: auto;
+    }
+    /* .social{
+        margin: 0;
+    } */
+    /* .hamburger{
+        margin: 0 88%;
+    } */
+    .news{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+        font-size: 0.8rem;
+        position: relative;
+    }
+    .news h1{
+        /* width: 80%; */
+        position: absolute;
+    }
+    .news p{
+        /* width: 80%; */
+        position: absolute;
+        margin-top: 120px;
+    }
 }
-/* el media query de large esta en la linea37 */
