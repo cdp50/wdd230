@@ -21,26 +21,93 @@ body {
     text-align: center;
     display:none;
 }
-/* hamburger */
-/* #hamburger-menu {    
-    background-color: transparent;
-    font-size:1.8em;
-    border:none;
-}
 
-#hamburger-menu #sidebar-menu {
-    visibilty: hidden;
-    position: fixed;
+button, button::after {
+    width: 380px;
+    height: 86px;
+    font-size: 36px;
+    font-family: 'noto serif', cursive;
+    background: linear-gradient(45deg, transparent 5%, #9197A8 5%);
+    border: 0;
+    color: #fff;
+    letter-spacing: 3px;
+    line-height: 88px;
+    box-shadow: 6px 0px 0px #00E6F6;
+    outline: transparent;
+    position: relative;
+  }
+  
+  button::after {
+    --slice-0: inset(50% 50% 50% 50%);
+    --slice-1: inset(80% -6px 0 0);
+    --slice-2: inset(50% -6px 30% 0);
+    --slice-3: inset(10% -6px 85% 0);
+    --slice-4: inset(40% -6px 43% 0);
+    --slice-5: inset(80% -6px 5% 0);
+    
+    content: 'AVAILABLE NOW';
+    display: block;
+    position: absolute;
     top: 0;
-    right: -250px;
-    width: 200px;
-    height: 100%;
-    background-color: #3D0E61;
-    padding: 0px 10px;
-    box-sizing: border-box;
-} */
-
-/* hamburger6 */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 3%, #C6D3F5 3%, #C6D3F5 5%, #FF013C 5%);
+    text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #C6D3F5;
+    clip-path: var(--slice-0);
+  }
+  
+  button:hover::after {
+    animation: 1s glitch;
+    animation-timing-function: steps(2, end);
+  }
+  
+  @keyframes glitch {
+    0% {
+      clip-path: var(--slice-1);
+      transform: translate(-20px, -10px);
+    }
+    10% {
+      clip-path: var(--slice-3);
+      transform: translate(10px, 10px);
+    }
+    20% {
+      clip-path: var(--slice-1);
+      transform: translate(-10px, 10px);
+    }
+    30% {
+      clip-path: var(--slice-3);
+      transform: translate(0px, 5px);
+    }
+    40% {
+      clip-path: var(--slice-2);
+      transform: translate(-5px, 0px);
+    }
+    50% {
+      clip-path: var(--slice-3);
+      transform: translate(5px, 0px);
+    }
+    60% {
+      clip-path: var(--slice-4);
+      transform: translate(5px, 10px);
+    }
+    70% {
+      clip-path: var(--slice-2);
+      transform: translate(-10px, 10px);
+    }
+    80% {
+      clip-path: var(--slice-5);
+      transform: translate(20px, -10px);
+    }
+    90% {
+      clip-path: var(--slice-1);
+      transform: translate(-10px, 0px);
+    }
+    100% {
+      clip-path: var(--slice-1);
+      transform: translate(0);
+    }
+  }
 .header{
     position: fixed;
     top: 0;
@@ -162,11 +229,6 @@ a{
  
 
 
-
-
-
-
-
 /* main */
 main{
     display: grid;
@@ -174,15 +236,27 @@ main{
     /* border: 2px solid black; */
     /* height: 100%; */
     /* min-height: 10rem; */
+    grid-template-columns: 2fr 2fr 2fr 2fr;
     margin: 0 auto;
     width: 100%;
     max-width: 85%;
+}
+
+@media screen and (max-width: 40rem){
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    .Spotlight-child{
+        min-width: 95%;
+    }
 }
 .category-item{
     border: 1px solid gray;
     height: 200px;
     background-color: beige;
     margin: 10px;
+    /* min-width: 500px; */
 }
 .Spotlight-parent{
     display: flex;
@@ -191,13 +265,14 @@ main{
     height: 400px;
 }
 .Spotlight-child{
-    border: 1px solid gray;
+    border: 2px solid gray;
     height: 180px;
-    min-width: 95%;
+    max-width: 95%;
     margin:0 auto;
 }
 .join{
     display:none;
+    background-image: url();
 }
 .Spotlight-child-3{
     display: none;
@@ -236,10 +311,10 @@ main{
     width: 100%;
     height: 200px;
 }
-.Spotlight-child:first-child{
+.Spotlight-child first{
     position: relative;
 }
-.Spotlight-child:first-child img{
+.Spotlight-child one{
     position: absolute;
     left: 0px;
     top: 0px;
@@ -324,7 +399,8 @@ footer{
 
     .hero{grid-area: hero;}
     .news{grid-area: news;}
-    .Spotlight-parent{grid-area: spotlight-parent}
+    .Spotlight-parent{grid-area: spotlight-parent; flex-direction: row; padding: 10px;}
+    .Spotlight-child{ width: 95% ; height: 100%}
     .join{grid-area: join;}
     .event{grid-area: event;}
     .weather{grid-area: weather;}
@@ -333,6 +409,7 @@ footer{
         display: grid;
         /* gap: 1rem; */
         /* border: 2px solid black; */
+        grid-template-columns: 2fr 2fr 2fr;
         grid-template-areas:
             "hero hero hero"
             "news news news"
@@ -418,6 +495,7 @@ footer{
 /* if screen goes bigger than __ then show 
 what's inside the brackets */
 @media (min-width: 75em){
+    .Spotlight-parent{grid-area: spotlight-parent; flex-direction: column;}
     main{
         display: grid;
         /* gap: 1rem; */
@@ -438,6 +516,7 @@ what's inside the brackets */
     }
     .Spotlight-parent{
         height: 640px;
+        padding:0px;
     }
     .Spotlight-child{
         height: 202px;
