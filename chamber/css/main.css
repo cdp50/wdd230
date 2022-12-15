@@ -230,45 +230,52 @@ a{
 
 
 /* main */
-main{
-    display: grid;
+/* main{ */
+    /* display: grid; */
     /* gap: 1rem; */
     /* border: 2px solid black; */
     /* height: 100%; */
     /* min-height: 10rem; */
-    grid-template-columns: 2fr 2fr 2fr 2fr;
-    margin: 0 auto;
+    /* grid-template-columns: 2fr 2fr 2fr 2fr;
+    margin: 0% 10% 0% 10%;
     width: 100%;
-    max-width: 85%;
+    max-width: 430px;
+} */
+
+
+/* @media screen and (max-width: 40rem){ */
+.menu_social{
+    max-width: 340px;
+    min-width: 340px;
+    margin: 0% auto;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    max-width: 340px;
+    min-width: 340px;
+    margin: 0% auto;
 }
 
-@media screen and (max-width: 40rem){
-    main {
-        display: flex;
-        flex-direction: column;
-    }
-    .Spotlight-child{
-        min-width: 95%;
-    }
-}
 .category-item{
     border: 1px solid gray;
     height: 200px;
     background-color: beige;
     margin: 10px;
-    /* min-width: 500px; */
 }
 .Spotlight-parent{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    /* grid-template-columns: 1fr 1rf; */
     justify-content: center;
-    height: 400px;
+    height: 100%;
+    width: auto;
+    /* position: relative; */
 }
-.Spotlight-child{
-    border: 2px solid gray;
-    height: 180px;
-    max-width: 95%;
-    margin:0 auto;
+.category-item .Spotlight-child{
+    height: 100%;
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 .join{
     display:none;
@@ -416,13 +423,26 @@ footer{
             "spotlight-parent spotlight-parent spotlight-parent"
             "join join join"
             "event event weather";
-        height: 100%;
+        
         margin: 0 auto;
+        max-width: 830px;
+        min-width: 830px;
+        /* min-width: 780px; */
+    }
+    .Spotlight-parent{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-content: center;
+    }
+    .Spotlight-child{
+        align-self: center;
+        padding-left: 45px;
     }
     /* the keyword unset works kind of like an opposite of 
     display:none; it is working so far. */
     .join{
         display: unset;
+    
     }
     .hamburger.active .bar :nth-child(2){
         opacity: 0;
@@ -488,14 +508,33 @@ footer{
     .news p{
         width: 80%;
     }
+    .menu_social{
+        max-width: 830px;
+        min-width: 830px;
+        margin: 3% auto;
+    }
+    /* .category-item{
+        max-width: ;
+    } */
 
 }
 
 /* LARGE SCREEN */
 /* if screen goes bigger than __ then show 
 what's inside the brackets */
-@media (min-width: 75em){
-    .Spotlight-parent{grid-area: spotlight-parent; flex-direction: column;}
+/* LARGE SCREEN */
+@media only screen and (min-width: 75em){
+    .Spotlight-parent{
+        display: flex;
+        flex-direction: column;
+    }
+    .Spotlight{
+        max-width: 200px;
+    }
+    .Spotlight-child{
+        padding: 0%;
+    }
+  
     main{
         display: grid;
         /* gap: 1rem; */
@@ -505,8 +544,9 @@ what's inside the brackets */
             "weather hero hero spotlight-parent"
             "join news news spotlight-parent";
         height: 100%;
-        width: 75%;
+        /* width: 75%; */
         margin: 0 auto;
+        max-width: 1400px;
     }
     .hero{
         height: 420px;
@@ -517,9 +557,6 @@ what's inside the brackets */
     .Spotlight-parent{
         height: 640px;
         padding:0px;
-    }
-    .Spotlight-child{
-        height: 202px;
     }
     .container{
         margin: auto;
