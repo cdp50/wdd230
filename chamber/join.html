@@ -56,71 +56,70 @@
         </p>
       </div>
     </header>
-    <main>
-      <div class="category-item hero">
-        <picture>
-          <source media="(max-width: 200px)" srcset="images/welcome200.jpg" />
-          <source media="(max-width: 500px)" srcset="images/welcome500.jpg" />
-          <source media="(max-width: 800px)" srcset="images/welcome800.jpg" />
-          <img src="images/welcome1100.jpg" alt=" Welcome to Idaho Falls" />
-        </picture>
-      </div>
-      <div class="category-item event">
-        <picture>
-          <source media="(max-width: 200px)" srcset="images/merryChristmas200.png"/>
-          <source media="(max-width: 500px)" srcset="images/merryChristmas500.png"/>
-          <source media="(max-width: 800px)" srcset="images/merryChristmas800.png"/>
-          <img src="images/merryChristmas1100.png" alt=" Merry Christmas" />
-        </picture>
-      </div>
-      <div class="category-item ">
-        <h3>Weather</h3>
-        <div class="weather"></div>
-        <p class="temp"></p>
-        <div class="speedChillContainer">
-          <div class="speedContainer">
-            <p class="titleWeather">Wind Speed</p>
-            <p class="windspeed"></p>
+    <div class="joinCont">
+        
+      <form method="get" action="thankyou.html">
+          <h1>Join The Chamber</h1>
+          <input type="hidden" id="dateform">
+          <label class="top">First Name:*<input type="text" name="fname" required></label>
+          <label class="top">Last Name:*<input type="text" name="lname" required></label>
+          <label class="top">Business Position Title:<input type="text" name="busineesPosition" pattern="[- A-Za-z]+" required minlength="7"></label>
+          <label class="top">Email:*<input type="email" name="email" placeholder="example@mail.com" required></label>
+          <label class="top">Cell phone:*<input type="tel" name="tel" required></label>
+          <label class="top">Business Name:*<input type="text" name="busineesName" required></label>
+          <label class="top">Membership Level:*
+              <select name="membership">
+                  <option value="">Please Select</option>
+                  <option value="np">Np Membership</option>
+                  <option value="bronze">Bronze Membership</option>
+                  <option value="silver">Silver Membership</option>
+                  <option value="gold">Gold Membership</option>
+              </select>
+          </label>
+          <label class="top">
+              Business Description
+              <textarea name="desc" id="desc" cols="20" rows="5"></textarea>
+          </label>
+          <input type="submit" class="submitbtn" value="Join the chamber">
+      </form>
+      <div class="membershipcontainer">
+          <h2>Membership Levels</h2>
+          <div class="np membership">
+              <p>NP Membership</p>
+              <ul>
+                  <li>For non profit organizations and there is no fee</li>
+              </ul>
           </div>
-          <div class="chillContainer">
-            <p class="titleWeather">windchill</p>
-            <p class="windchill"></p>
+          <div class="bronze membership">
+              <p>Bronze Membership</p>
+              <ul>
+                  <li>15% discount on events</li>
+                  <li>10% discount on advertising</li>
+                  <li>Fee of $50/month</li>
+              </ul>
           </div>
-        </div>
+          <div class="silver membership">
+              <p>Silver Membership</p>
+              <ul>
+                  <li>25% discount on events</li>
+                  <li>15% discount on advertising</li>
+                  <li>Free participation in the trade fair</li>
+                  <li>Fee of $100/month</li>
+              </ul>
+          </div>
+          <div class="gold membership">
+              <p>Gold Membership</p>
+              <ul>
+                  <li>50% discount on events</li>
+                  <li>50% discount on advertising</li>
+                  <li>Free participation in the trade fair</li>
+                  <li>5 free featured ads per year</li>
+                  <li>1 free training per quarter</li>
+                  <li>Fee of $250/month</li>
+              </ul>
+          </div>
       </div>
-      <div class="category-item news">
-        <h1>
-          <a
-            class="simple-link"
-            href="https://www.eastidahonews.com/2022/12/idaho-state-police-to-distribute-over-400-meals-to-those-in-need-this-week/"
-            >Idaho State Police to distribute over 400 meals to those in need
-            this week</a
-          >
-        </h1>
-        <p>
-          AMMON — After months of planning and weeks of hard work raising money,
-          Idaho State Police will deliver hundreds of meals this week to those
-          in need. It’s all thanks to local businesses, schools and the
-          community.
-        </p>
-      </div>
-      <div class="category-item Spotlight-parent">
-        <div class="Spotlight-child">
-          <img class="Spotlight" src="images/cleaning300.png" alt=" cleaning"/>
-        </div>
-        <div class="Spotlight-child">
-            <img class="Spotlight" src="images/gym300.png" alt=" gym"/>
-        </div>
-        <div class="Spotlight-child Spotlight-child-3">
-            <img class="Spotlight" src="images/rent300.png" alt=" rent a car"/>
-        </div>
-      </div>
-      <div class="category-item join">
-        <button style="margin: 0 auto;">Join Us</button>
-        <img src="images/star.png" alt="star">
-        <!-- <button style="margin:0 auto">Join</button> -->
-      </div>
-    </main>
+  </div>
     <footer>
       <div class="upFooter">
         <div class="upF1">
@@ -153,6 +152,5 @@
       </div>
     </footer>
     <script src="js/main.js"></script>
-    <script src="js/weather.js"></script>
   </body>
 </html>

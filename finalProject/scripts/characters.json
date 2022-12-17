@@ -1,0 +1,29 @@
+{
+    "characters": [
+        {
+            "name":"Yoh Asakura",
+            "description":"Yoh Asakura (麻倉 葉, Asakura Yō) is an easy-going teenage boy with the ability to see ghosts, he quickly becomes friends with Manta and reveals that he is training to eventually become the Shaman King. Though he is too lazy to train properly, he is motivated by a promise he made to his fiancée, Anna Kyoyama, to give her an easy life once he becomes Shaman King. While he remarks that he wants to become Shaman King in order to live a carefree and easy life, those closest to Yoh know that he wants to create a world where no one has to suffer from loneliness like Yoh did as a child because he was a shaman and nobody understood or accepted him.",
+            "img":"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/cc255734-5c25-45c6-873c-f8e8e80619f0/ddsgluw-055cc563-2a7a-4d61-9eca-cba9d80be713.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2NjMjU1NzM0LTVjMjUtNDVjNi04NzNjLWY4ZThlODA2MTlmMFwvZGRzZ2x1dy0wNTVjYzU2My0yYTdhLTRkNjEtOWVjYS1jYmE5ZDgwYmU3MTMuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.PltzK79N_JrIdL7XaJmXAh3vbIm0rYow33ZrYj6PKLg"
+        },
+        {
+            "name":"Anna Kyōyama",
+            "description":"Anna Kyoyama (恐山 アンナ, Kyōyama Anna), nicknamed Anna the Itako II (二代目イタコのアンナ, Nidaime Itako no Anna), is Yoh Asakura's fiancėe and a powerful itako (a spirit medium in the 2001 English anime), with the ability to summon and channel spirits even from Heaven. She is unrelentingly brutal with Yoh's training in order to ensure he wins the Shaman Tournament and becomes Shaman King. Anna attends Shinra Private Academy along with Yoh and Manta. She has previously appeared in Hiroyuki Takei's other works, including Butsu Zone and Itako no Anna, and is notably the mascot for the Aomori Prefecture's police force.",
+            "img":"https://i.pinimg.com/736x/66/9f/c5/669fc5483c48542886c3031227ecb5ba.jpg"
+        },
+        {
+            "name":"Manta Oyamada",
+            "description":"Manta Oyamada (小山田 まん太, Oyamada Manta), known as Mortimer 'Morty' Manta in both the uncut and edited dubs of the 2001 anime and English-dubbed video games based on that adaptation, is Yoh's best friend and the first human to try and understand Yoh without any discrimination. An intelligent and thoughtful boy who carries a book with him every day, he attends Shinra Private Academy with Yoh and Anna. He is physically very short, a fact that he is extremely sensitive about, and has been mistaken as a Koropokuru, a shy nature spirit from northern Japan. Though he is not a shaman and unable to use his spiritual powers like Yoh and Anna, he is capable of seeing spirits and faithfully stands by Yoh. Throughout the series, Manta acts as the primary narrator of the events in Shaman King.",
+            "img":"https://comicvine.gamespot.com/a/uploads/scale_small/0/2372/299008-41526-manta-oyamada.jpg"
+        },
+        {
+            "name":"Hao Asakura",
+            "description":"Hao Asakura (麻倉 葉王 (ハオ), Asakura Hao) ('Zeke Asakura' in the English dub of the 2001 anime) is the main antagonist of Shaman King, currently the second reincarnation of his original self and the twin brother of Yoh. He is the most powerful participant in the Shaman Tournament, with Furyoku at 1,250,000, an extremely high level compared with the other characters' Furyoku levels in Shaman King. While he exhibits ruthlessness towards his opponents, he acts surprisingly easy-going and affable, similar to Yoh's personality.",
+            "img":"https://s4.anilist.co/file/anilistcdn/character/large/b172-AuF01ttTXRsW.jpg"
+        },
+        {
+            "name":"Hana Asakura",
+            "description":"Hana Asakura (麻倉花, Asakura Hana) is the son of Yoh Asakura and Anna Kyoyama who is the protagonist of Shaman King: Flowers, first introduced in the Shaman King epilogue sidestory 'Funbari no Uta' as an infant traveling alongside Ryu to find the Five Grand Elemental Spirits. He is depicted as a Shaman having Yoh's spirit guardian, Amidamaru, alongside him using him with the Futsu-no-Mitama no Tsurugi (フツノミタマの剣) weapon to create two Over Souls, O.S. 'Oni Kabuto' (O.S. 鬼兜) and O.S. 'Oni Kabuto Though' (O.S. 鬼兜). He lives at Tamao Tamamura's care while his parents are absent. Hana is bored with his life and finds the appearance of his fiancé Alumi Niumbirch and his proclaimed enemies Yohane and Luka Asakura as a way to kill his boredom. Hana also possesses several Oni sealed inside him that will be summoned when he is in danger in order to protect him. They were placed by his uncle, Hao Asakura, when he was a baby.",
+            "img":"https://cdn.myanimelist.net/images/characters/12/239627.jpg"
+        }
+    ]
+}

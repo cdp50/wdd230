@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Unbounded:wght@500&display=swap');
+* {
+    margin: 0 auto;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --title: 'Unbounded', cursive;
+    --paragraph: 'Open Sans', sans-serif;
+    --color: #FF8000;
+}
+h1, h2, h3 {
+    font-family: var(--title);
+}
+p {
+    font-family: var(--paragraph);
+    font-size: 18px;
+}
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.logo {
+    width: 150px;
+}
+nav {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    justify-items: left;
+    gap: 80px;
+
+
+
+}
+a {
+    text-decoration: none;
+}
+.menu  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+
+
+}
+
+.menu  {
+    list-style-type: none;
+}
+.menu a {
+    text-decoration: none;
+    list-style: none;
+    font-family: var(--title);
+    color: var(--color);
+    font-size: 20px;
+    
+}
+.material-symbols-outlined {
+    color: var(--color);
+    visibility: hidden;
+    font-size: 40px !important;
+    
+}
+.menu a {
+    padding: 10px;
+}
+.menu li:hover a{
+    background-color: var(--color);
+    color: white;
+    height: 100%;
+    padding: 10px;
+    
+}
+
+.hero img{
+    display: block;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center 10px;
+}
+
+.description {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-top: 100px;
+}
+.description p {
+    font-size: 30px;
+}
+.description img {
+    width: 500px;
+    height: 600px;
+    object-fit: cover;
+}
+
+button {
+    background-color: var(--color);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    margin-top: 30px;
+    font-size: 15px;
+    display: block;
+    cursor: pointer;
+}
+
+button a{
+    color: white;
+}
+.titles {
+    color: var(--color);
+    display: block;
+    border-bottom: 4px solid #FF8000;
+    margin-top: 100px;
+    padding-bottom: 10px;
+}
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: flex-start;
+    gap: 80px;
+    margin-top:100px ;
+}
+
+.cards img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.cards p {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: justify;
+}
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto;
+    background-color: #115085;
+    margin-top: 100px;
+    padding: 30px;
+    color: white;
+}
+
+footer p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+footer img {
+    width: 100px;
+    
+}
+
+footer .social img {
+    filter: invert(100%);
+    width: 40px;
+    margin-left: 20px;
+}
+
+.cardCharacter {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-top: 60px;
+}
+.cardCharacter img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+}
+.cardCharacter h2 {
+    margin-bottom: 30px;
+}
+.manga {
+    margin-top: 100px;
+}
+.manga img {
+    width: 100%;
+    height: 100%;
+}
+.manga div {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.manga p {
+    font-size: 20px;
+    line-height: 40px;
+}
+.manga h2 {
+    margin-bottom: 30px;
+    margin-top: 100px;
+    
+}
+.btn {
+    margin: 40px 0px;
+}
+
+.remake {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    color: white;
+    margin-top: 100px;
+}
+.remake * {
+    margin: 20px 0px;
+}
+.remake img {
+    width: 100%;
+}
+.remakecard {
+    background-color: #115085;
+    padding: 20px;
+}
+.join {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 100px;
+    gap: 40px;
+}
+.join img {
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+    margin: 0;
+    
+}
+form {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--paragraph);
+    margin: 0;
+}
+form label {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+
+}
+
+form input {
+    padding: 10px;
+    margin-top: 10px;
+    width: 300px;
+    border: 2px solid #115085;
+    outline: none;
+}
+form input:required:valid {
+    border: 2px solid green;
+}
+
+.thanks {
+
+
+    margin: 0 auto;
+}
+
+.thanks img {
+    width: 300px;
+    display: block;
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+.thanks {
+    text-align: center;
+}
+.store {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 100px;
+    gap: 135px;
+}
+.store .containerProduct {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr ;
+    gap: 20px;
+
+}
+
+.store .containerProduct img {
+    height: 300px;
+    width: 200px;
+    object-fit: contain;
+}
+.price {
+    font-size: 30px;
+    margin-top: 20px;
+}
+.store button {
+    margin: 20px 0px;
+}
+.containerProduct .desc {
+    font-size: 15px;
+}
+
+.containerProduct h3 {
+    grid-column: 1/3;
+    font-size: 17px;
+    text-align: left;
+    margin: 20px 0px;
+}
+.visits {
+    margin-top: 40px;
+    color: #FF8000;
+}
+
+@media screen and (max-width:1400px) {
+    .store {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    nav {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr;
+        gap:20px;
+        text-align: right;
+        align-items: center;
+        
+
+    }
+    .menu {
+        grid-column: 1/3;
+        grid-row: 2/3;
+        flex-direction: column;
+        display: none;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 40px;
+    }
+
+    .description {
+       flex-direction: column;
+    }
+    .description img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .material-symbols-outlined {
+        color: var(--color);
+        visibility:visible;
+    }
+    .cardCharacter {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin-top: 60px;
+    }
+    .cardCharacter img {
+        width: 200px;
+        height: 300px;
+        object-fit: cover;
+    }
+    .manga div {
+        flex-direction: column;
+    }
+
+    .remake {
+        grid-template-columns: 1fr;
+    }
+    .thanks {
+        flex-direction: column;
+    }
+    .store {
+        grid-template-columns: 1fr;
+    }
+}
+
+
