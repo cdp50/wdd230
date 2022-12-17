@@ -16,8 +16,34 @@ body {
     text-align: left;
     /* margin: 3% auto;
     margin: 0 auto; */
-
 }
+.directory{
+    display: none;
+    gap: 40px;
+}
+.tabla{
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+}
+.tabla tr td {
+    padding: 30px;
+}
+.tabla tr:nth-child(odd){
+    background-color: rgb(220, 218, 218);
+}
+.tabla tr:nth-child(even){
+    background-color: white;
+}
+.tabla tr td a{
+    font-size: 1rem;
+    color: blue;
+}
+.tabla tr{
+    display: flex;
+    flex-direction: column;
+}
+
 .date{
     display: flex;
     justify-content: center;
@@ -188,6 +214,16 @@ a{
     align-items: center;
     padding: 1rem;
 }
+.icons{
+    text-align: center;
+    
+}
+.icons span{
+    font-size: 80px;
+    margin: 40px 20px;
+    border: 6px solid black;
+    cursor: pointer;
+}
 .hamburger{
     display: block !important;
     margin-left: 93%;
@@ -242,6 +278,7 @@ a{
     width: 80%;
     font-size: 1rem;
 }
+
 
  
 
@@ -581,6 +618,28 @@ footer{
     margin-bottom: 3%;
 }
 
+.directory div{
+    background-color: white;
+    padding: 30px;
+}
+.directory div img{
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+.directory div p{
+    text-align: center;
+}
+.directory a{
+    text-align: center;
+    color: blue;
+    display: block;
+    font-size: small;
+    height: fit-content;
+}
+
 
 
 
@@ -617,6 +676,11 @@ footer{
         min-width: 830px;
         gap: 20px;
         /* min-width: 780px; */
+    }
+    .directory{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
     }
     .logo{
         display: block;
@@ -774,6 +838,16 @@ footer{
             width: 800px;
             height: auto;
             margin: 30px auto;
+        }
+        .directory{
+            grid-template-columns: 1fr 1fr;
+        }
+        .tabla tr{
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .tabla{
+            display: none;
         }
 
 
@@ -977,6 +1051,17 @@ what's inside the brackets */
         width: 400px;
         height: auto;
         margin: 30px auto;
+    }
+    .tabla{
+        display: none;
+        margin: 0 auto;
+    }
+    .tabla tr{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .directory{
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
 
