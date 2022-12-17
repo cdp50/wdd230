@@ -11,6 +11,13 @@ head, body, footer{
 body {
     background-color: rgb(245, 240, 187);
 }
+
+.menu_social{
+    text-align: left;
+    /* margin: 3% auto;
+    margin: 0 auto; */
+
+}
 .date{
     display: flex;
     justify-content: center;
@@ -21,7 +28,13 @@ body {
     text-align: center;
     display:none;
 }
-
+.logo_footer{
+    width: 175px;
+    height: auto;
+}
+.discover_title{
+    text-align: center;
+}
 button, button::after {
     width: 380px;
     height: 86px;
@@ -154,7 +167,10 @@ a{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 1%;
+    margin-top: 5%;
+    margin-bottom: 4%;
+    height: 100px;
+    width: auto;
 }
 .bar{
     display: block;
@@ -204,9 +220,9 @@ a{
 /* .social{
     margin-top: 3%;
 } */
-.social{
+/* .social{
     margin: 3% 7%;
-}
+} */
 .hamburger{
     margin: 0 82%;
 }
@@ -224,6 +240,7 @@ a{
 }
 .news p{
     width: 80%;
+    font-size: 1rem;
 }
 
  
@@ -253,13 +270,15 @@ main {
     display: flex;
     flex-direction: column;
     max-width: 340px;
-    min-width: 340px;
+    /* min-width: 340px; */
     margin: 0% auto;
+    align-items: center;
 }
 
 .category-item{
     border: 1px solid gray;
-    height: 200px;
+    height: 300px;
+    width: 300px;
     background-color: beige;
     margin: 10px;
 }
@@ -276,6 +295,7 @@ main {
     width: 100%;
     padding-top: 2%;
     padding-bottom: 2%;
+    margin: 0 auto;
 }
 .join{
     display:none;
@@ -286,53 +306,75 @@ main {
 }
 
 /* boxes img */
-.hero{
-    position: relative;
-}
 .hero img {
-    position: absolute;
+    /* position: absolute; */
     left: 0px;
     top: 0px;
     width: 100%;
-    height: 200px;
+    height: 100%;
     /* max-height: 420px; 
     min-height: 420px; */
-}
-.event{
-    position: relative;
+    /* object-fit: contain; */
+    /* padding: 3%; */
+    /* object-position: center top; */
 }
 .event img {
-    position: absolute;
-    left: 0px;
     top: 0px;
     width: 100%;
-    height: 200px;
-}
-.weather{
-    position: relative;
+    height: 100%;
+
 }
 .weather img {
-    position: absolute;
     left: 0px;
     top: 0px;
     width: 100%;
-    height: 200px;
+    height: 100%;
 }
-.Spotlight-child first{
+/* .Spotlight-child first{
     position: relative;
+} */
+
+.column img{
+    width: 80%;
+    margin: 0 auto;
 }
-.Spotlight-child one{
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 200px;
-    /* max-height: 420px; 
-    min-height: 420px; */
+.img-container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+}
+.img-container p{
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
-
-
+/* .Spotlight-child first{
+    position: relative;
+} *//* .Spotlight-child first{
+    position: relative;
+} *//* .Spotlight-child first{
+    position: relative;
+} *//* .Spotlight-child first{
+    position: relative;
+} *//* .Spotlight-child first{
+    position: relative;
+} *//* .Spotlight-child first{
+    position: relative;
+} *//* .Spotlight-child first{
+    position: relative;
+} *//* .Spotlight-child first{
+    position: relative;
+} *//* .Spotlight-child first{
+    position: relative;
+} *//* .Spotlight-child first{
+    position: relative;
+} *//* .Spotlight-child first{
+    position: relative;
+} *//* .Spotlight-child first{
+    position: relative;
+} */
 
 
 
@@ -396,13 +438,8 @@ footer{
 
 
 
-
-
-
-
-
 /* MEDIUM SCREEN */
-@media (min-width:40em){
+@media only screen and (min-width:40em){
 
     .hero{grid-area: hero;}
     .news{grid-area: news;}
@@ -427,12 +464,30 @@ footer{
         margin: 0 auto;
         max-width: 830px;
         min-width: 830px;
+        gap: 20px;
         /* min-width: 780px; */
     }
+    .logo{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2%;
+        height: 200px;
+        width: auto;
+    }
+    /* .event{
+        max-width:60% !important;
+    }
+    .weather{
+        max-width: 40% !important;
+    } */
     .Spotlight-parent{
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-content: center;
+    }
+    .category-item{
+        width: auto;
     }
     .Spotlight-child{
         align-self: center;
@@ -472,27 +527,26 @@ footer{
         padding-left: 0;
         padding-top: 3%;
     }
-    nav-item{
+    /* nav-item{
         margin: 16px;
-    }
+    } */
     .nav-menu.active{
         display: flex;
     }
-    .hero{
-        height: 420px;
-    }
     .hero img {
-        position: absolute;
-        left: 0px;
-        top: 0px;
         width: 100%;
-        height: auto;
+        /* object-fit: cover; */
+        /* object-position: center top; */
+        /* height: auto;
         max-height: 420px; 
-        min-height: 420px;
+        min-height: 420px; */
     }
-    .social{
+    .hero{
+        height: 100%;
+    }
+    /* .social{
         margin: 0 7%;
-    }
+    } */
     .hamburger{
         margin: 0 88%;
     }
@@ -500,22 +554,87 @@ footer{
         display: grid;
         grid-template-rows: 1fr 1fr;
         justify-items: center;
-        font-size: 85%;
+        font-size: 90%;
+        margin: 0px;
+        margin-top: 10px;
+        max-width: 810px;
+        margin-left: 10px;
     }
     .news h1{
         width: 90%;
     }
     .news p{
         width: 80%;
+        font-size: 1.3rem;
     }
     .menu_social{
         max-width: 830px;
         min-width: 830px;
         margin: 3% auto;
     }
+
     /* .category-item{
         max-width: ;
     } */
+        /* discover page */
+        /* .galleryContainer{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            gap:20px;
+        }
+        .column{
+            display: flex;
+            flex-direction: column;
+        } */
+        .column img{
+            width: 100%;
+        }
+        .img-container p{
+            position: relative;
+            top: -120px;
+            padding: 10px;
+            background-color: black;
+            color: white;
+            visibility: hidden;
+        }
+        .img-container:hover p{
+            visibility: visible;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
 
@@ -527,12 +646,31 @@ what's inside the brackets */
     .Spotlight-parent{
         display: flex;
         flex-direction: column;
+        width: 100%;
+        /* max-width: 240px; */
+        height: 975px;
+    }
+    .logo{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2%;
+        height: 200px;
+        width: auto;
+    }
+    .news{
+        width: 630px;
+        margin:10px
     }
     .Spotlight{
-        max-width: 200px;
+        height: 300px;
+        width: 300px;
     }
     .Spotlight-child{
         padding: 0%;
+        /* margin: 0 auto; */
+        max-width: fit-content;
+        margin-top: 200px;
     }
   
     main{
@@ -548,15 +686,14 @@ what's inside the brackets */
         margin: 0 auto;
         max-width: 1400px;
     }
-    .hero{
-        height: 420px;
+    .category-item .Spotlight-child {
+        height: auto;
     }
+    /* .hero{
+        height: 420px;  // .hero height:auto: width: 
+    } */
     .Spotlight-child-3{
         display: unset;
-    }
-    .Spotlight-parent{
-        height: 640px;
-        padding:0px;
     }
     .container{
         margin: auto;
@@ -585,27 +722,26 @@ what's inside the brackets */
     .hamburger{
         display: none !important;
     }
-    .hero{
-        position: relative;
-    }
+    
     .hero img {
-        position: absolute;
-        left: 0px;
-        top: 0px;
-        width: 100%;
-        height: auto;
+        /* position: absolute; */
+        /* left: 0px;
+        top: 0px; */
+        width: auto;
+        height: 630px;
     }
-    /* .social{
-        margin: 0;
-    } */
-    /* .hamburger{
-        margin: 0 88%;
-    } */
+    .hero{
+        height: auto;
+        width: auto;
+        background-color: rgb(245, 240, 187);
+        border: none;
+    }
+    
     .news{
         display: grid;
         grid-template-rows: 1fr 1fr;
         justify-items: center;
-        font-size: 0.8rem;
+        font-size: 1rem;
         position: relative;
     }
     .news h1{
@@ -617,4 +753,41 @@ what's inside the brackets */
         position: absolute;
         margin-top: 120px;
     }
+
+
+
+
+    /* discover page */
+    .galleryContainer{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        gap:20px;
+    }
+    .column{
+        display: flex;
+        flex-direction: column;
+    }
+    .column img{
+        width: 100%;
+    }
+    .img-container p{
+        position: relative;
+        top: -120px;
+        padding: 10px;
+        background-color: black;
+        color: white;
+        visibility: hidden;
+    }
+    .img-container:hover p{
+        visibility: visible;
+    }
+    .img-container{
+        margin: 0px;
+    }
+    .column{
+        align-items: center;
+    }
+
+
 }
